@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/PreferenceScreenStyles"
+    android:background="#000000">
+
+    <PreferenceCategory
+        android:title="@string/setting">
+
+        <ListPreference
+            android:key="language_preference"
+            android:title="@string/language"
+            android:defaultValue="en"
+            android:entries="@array/language_options"
+            android:entryValues="@array/language_values" />
+
+        <SwitchPreference
+            android:key="dark_mode_preference"
+            android:title="@string/enable_dark_mode_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Do lười chỉnh lại layout nên dark mode chỉ ">
+
+        <PreferenceCategory
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="có tác dụng ở about app/về ứng dụng =))">
+
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Update thêm chỗ phóng to thu nhỏ ảnh =))">
+
+        </PreferenceCategory>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
